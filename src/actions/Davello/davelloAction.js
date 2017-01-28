@@ -4,24 +4,17 @@ export const addCard = (cardTitle) => ({
   cardTitle
 })
 
-export const addList = (listTitle) => ({
-  type: ADD_LIST,
-  id: uuid.v4(),
-  listTitle
+export const toggleModal = (id) => ({
+  type: TOGGLE_MODAL,
+  id
 })
 
-export const activateModal = (cardId, listId) => ({
-  type: ACTIVATE_MODAL,
-  cardId,
-  listId
-})
-
-export const editCardModal = (cardId, listId, title, text) => ({
+export const editCardModal = (id, title, text) => ({
   type: EDIT_CARD_MODAL,
-  cardId,
-  listId,
+  id,
   title,
   text
 })
 
 //TODO: add uuid!!!!!!!!!!!!!!
+//TODO: add list after cards are working!!!!
