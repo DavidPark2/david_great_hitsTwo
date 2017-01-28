@@ -8,7 +8,7 @@ import reducer from './reducers'
 import {Router, Route, browserHistory} from 'react-router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-const store = createStore(reducer)
+const store = createStore(reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 render(
   <Provider store={store}>

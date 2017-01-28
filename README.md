@@ -9,7 +9,7 @@
 * Redux
 * Express
 * socket.io
-* bootstrap
+* react-bootstrap
 * etc...
 
 ## Available Scripts
