@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import TodoApp from './components/Todo/App'
+import Davello from './components/Davello/App'
 import reducer from './reducers'
 import {Router, Route, browserHistory} from 'react-router'
 
@@ -11,7 +12,8 @@ const store = createStore(reducer)
 render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={TodoApp} />
+      <Route path="/todo" component={TodoApp} />
+      <Route path="/davello" component={Davello} />
     </Router>
   </Provider>,
   document.getElementById('root')
