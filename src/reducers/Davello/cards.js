@@ -35,15 +35,15 @@ const cards = (state = [], action) => {
     case 'ADD_CARD':
       return [
         ...state,
-        todo(undefined, action)
+        card(undefined, action)
       ]
     case 'TOGGLE_MODAL':
       return state.map(t =>
-        todo(t, action)
+        card(t, action)
       )
     case 'EDIT_CARD_MODAL':
       return state.map(t =>
-        todo(t, action)
+        card(t, action)
       )
     default:
       return state
