@@ -1,3 +1,5 @@
+import uuid from 'uuid'
+
 export const addCard = (cardTitle) => ({
   type: ADD_CARD,
   id: uuid.v4(),
