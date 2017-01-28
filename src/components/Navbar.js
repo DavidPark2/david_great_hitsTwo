@@ -1,14 +1,23 @@
 import React from 'react'
-import {NativeProgress, Colors} from 'react-foundation';
+import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
-const Navbar = () => (
-  <div className="native-progress-example">
-    <NativeProgress max={100} value={75}/>
-    <NativeProgress color={Colors.SECONDARY} max={100} value={75}/>
-    <NativeProgress color={Colors.SUCCESS} max={100} value={75}/>
-    <NativeProgress color={Colors.WARNING} max={100} value={75}/>
-    <NativeProgress color={Colors.ALERT} max={100} value={75}/>
-  </div>
+const Navbarz = () => (
+  <Navbar inverse collapseOnSelect>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="#">David's Great Hits</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav pullRight>
+        <NavItem eventKey={1} href="#">Todo</NavItem>
+        <NavItem eventKey={2} href="#">Davello</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
 )
 
-export default Navbar
+export default Navbarz
+
+// TODO: fix href

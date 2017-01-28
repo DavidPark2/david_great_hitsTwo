@@ -6,6 +6,7 @@ import TodoApp from './components/Todo/App'
 import Davello from './components/Davello/App'
 import reducer from './reducers'
 import {Router, Route, browserHistory} from 'react-router'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const store = createStore(reducer)
 
