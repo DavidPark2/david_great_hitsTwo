@@ -1,6 +1,16 @@
-# Redux Todos Example
+# Making a variety of project
+* Todo
+* Davello - WIP
+* Chat room - TBD
+* etc...
 
-This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app).
+## Tech
+* React
+* Redux
+* Express
+* socket.io
+* bootstrap
+* etc...
 
 ## Available Scripts
 
