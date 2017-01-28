@@ -22,8 +22,8 @@ const card = (state, action) => {
 
       return {
         ...state,
-        cardTitle: title,
-        cardText: text
+        cardTitle: action.title,
+        cardText: action.text
       }
     default:
       return state

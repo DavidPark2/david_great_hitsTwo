@@ -1,10 +1,15 @@
 import { combineReducers } from 'redux'
+//todos reducers
 import todos from './Todo/todos'
 import visibilityFilter from './Todo/visibilityFilter'
 
-const todoApp = combineReducers({
+//davello reducers
+import cards from './Davello/cards'
+
+const greatHits = combineReducers({
   todos,
-  visibilityFilter
+  visibilityFilter,
+  cards
 })
 
-export default todoApp
+export default greatHits
